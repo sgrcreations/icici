@@ -7,4 +7,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::match(['get', 'post'], '/icici/callback', [IciciController::class, 'callback']);
+Route::match(['get', 'post'], '/callback', [IciciController::class, 'callback']);
